@@ -1,20 +1,69 @@
 <!doctype html>
 
-<html >
+<html lang="en">
+<head>
+  <meta charset="utf-8">
 
+  <title>The HTML5 Herald</title>
+  <style>
+      header {
+              background-color: #fff;
+              padding: 30px;
+              text-align: center;
+              font-size: 35px;
+              color: orange;    
+             }   
+      
+      nav {
+              float: left;
+              width: 40%;
+              padding: 20px;
+              text-align: center;
+              font-size: 25px;
+            }
+
+      article {
+          float: right;
+          padding: 20px;
+          width: 40%;
+        }
+      
+      section:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+  </style>      
+    
+</head>
     
     
 
 <body>
     
+    <header>
+        <h1> Header - posti demo </h1>
+        
 
+    </header>
+    
+    <section>
+    <nav > 
+        Try to say hi to our virtual assistant Timo!
+        <img src="postilogo.jpg"/>
+    
+    </nav> 
+    
+    <article>
         <iframe
             allow="microphone;"
             width="500"
             height="600"
             src="https://console.dialogflow.com/api-client/demo/embedded/881c30d9-e712-489e-b50e-2e8bb550f67e">
         </iframe>
-
+    </article>
+        
+    </section>
       
 </body>
 </html>
